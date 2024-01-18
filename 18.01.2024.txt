@@ -1,0 +1,141 @@
+clasa
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace WindowsFormsApplication9
+{
+    class Student
+    {
+        public string name;
+        public int age, year;
+        public int grade1, grade2, grade3, grade4, grade5;
+        public double average;
+
+        public Student ()
+        {
+            name = "";
+            age = 0;
+            year = 0;
+            grade1 = 0;
+            grade2 = 0;
+            grade3 = 0;
+            grade4 = 0;
+            grade5 = 0;
+            average = 0;
+        }
+        public Student(string s,int v,int a,int n1,int n2,int n3,int n4,int n5)
+        {
+            name = s;
+            age = v;
+            year = a;
+            grade1 = n1;
+            grade2 = n2;
+            grade3 = n3;
+            grade4 = n4;
+            grade5 = n5;
+            average = (n1 + n2 + n3 + n4 + n5) / 5.0;
+        }
+        public string afisare()
+        {
+            return name + ',' + "Ani " + age + ',' +"Anul " + year + ',' + average;
+        }
+    }
+}
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication9
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        public Student[] v = new Student[100];
+        public int n = 0;
+
+        private void button1_Click(object sender, EventArgs e)
+        {   
+            n++;
+            v[n].name = textBox1.Text;
+            v[n].year = Convert.ToInt32(comboBox1.SelectedItem);
+            v[n].age = Convert.ToInt32(numericUpDown1.Value);
+            v[n].grade1 = Convert.ToInt32(comboBox2.SelectedItem);
+            v[n].grade2 = Convert.ToInt32(comboBox3.SelectedItem);
+            v[n].grade3 = Convert.ToInt32(comboBox4.SelectedItem);
+            v[n].grade4 = Convert.ToInt32(comboBox5.SelectedItem);
+            v[n].grade5 = Convert.ToInt32(comboBox6.SelectedItem);
+            v[n].average = (v[n].grade1 + v[n].grade2 + v[n].grade3 + v[n].grade4 + v[n].grade5) / 5.0;
+            string s = v[n].afisare();
+            listBox1.Items.Add(s);
+            textBox1.Clear();
+            numericUpDown1.Value = 0;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            for (int i = 1; i < n; i++)
+            {
+                for (int j = i + 1; j <= n; j++)
+                {
+                    if (v[i].name.CompareTo(v[j].name) > 0)
+                    {
+                        Student aux = new Student();
+                        aux = v[i];
+                        v[i] = v[j];
+                        v[j] = aux;
+                    }
+                }
+            }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            for (int i = 1; i < n; i++)
+            {
+                for (int j = i + 1; j <= n; j++)
+                {
+                    if (v[i].average > v[j].average)
+                    {
+                        Student aux = new Student();
+                        aux = v[i];
+                        v[i] = v[j];
+                        v[j] = aux;
+                    }
+                }
+            }
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            for (int i = 1; i <= n; i++)
+            {
+                if (v[i].age == Convert.ToInt32(comboBox7.SelectedItem))
+                {
+                    string s = v[i].afisare();
+                    listBox1.Items.Add(s);
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
