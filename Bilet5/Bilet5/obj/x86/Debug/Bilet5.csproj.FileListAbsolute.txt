@@ -1,0 +1,10 @@
+D:\12B\Bilet5\Bilet5\bin\Debug\Bilet5_Bazadate.mdf
+D:\12B\Bilet5\Bilet5\bin\Debug\Bilet5_Bazadate_log.ldf
+D:\12B\Bilet5\Bilet5\bin\Debug\Bilet5.exe.config
+D:\12B\Bilet5\Bilet5\bin\Debug\Bilet5.exe
+D:\12B\Bilet5\Bilet5\bin\Debug\Bilet5.pdb
+D:\12B\Bilet5\Bilet5\obj\x86\Debug\Bilet5.Form1.resources
+D:\12B\Bilet5\Bilet5\obj\x86\Debug\Bilet5.Properties.Resources.resources
+D:\12B\Bilet5\Bilet5\obj\x86\Debug\Bilet5.csproj.GenerateResource.Cache
+D:\12B\Bilet5\Bilet5\obj\x86\Debug\Bilet5.exe
+D:\12B\Bilet5\Bilet5\obj\x86\Debug\Bilet5.pdb
