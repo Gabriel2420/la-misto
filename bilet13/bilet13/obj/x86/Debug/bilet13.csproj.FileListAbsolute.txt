@@ -1,0 +1,10 @@
+D:\Visual\bilet13\bilet13\bin\Debug\baza_bilet13.mdf
+D:\Visual\bilet13\bilet13\bin\Debug\baza_bilet13_log.ldf
+D:\Visual\bilet13\bilet13\bin\Debug\bilet13.exe.config
+D:\Visual\bilet13\bilet13\bin\Debug\bilet13.exe
+D:\Visual\bilet13\bilet13\bin\Debug\bilet13.pdb
+D:\Visual\bilet13\bilet13\obj\x86\Debug\bilet13.Form1.resources
+D:\Visual\bilet13\bilet13\obj\x86\Debug\bilet13.Properties.Resources.resources
+D:\Visual\bilet13\bilet13\obj\x86\Debug\bilet13.csproj.GenerateResource.Cache
+D:\Visual\bilet13\bilet13\obj\x86\Debug\bilet13.exe
+D:\Visual\bilet13\bilet13\obj\x86\Debug\bilet13.pdb
